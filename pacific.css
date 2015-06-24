@@ -1,3 +1,5 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article { display: block;
+}
 body { background-image: url(images/ptrbackground.jpg); color: #666666;
        font-family: Arial, "Helvitica Neue", Helvetica, sans-serif;
 }
@@ -7,10 +9,34 @@ header { background-color:#000033; color:#FFFFFF; background-image: url(images/s
          background-repeat: no-repeat;
          background-position: right;
 }
-#content { padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; }
-nav  {font-weight: bold; background-color: #90C7E3; padding-top: 5px; padding-right: 5px; padding-bottom: 20px; padding-left: 5px; 
+#content { padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; list-style-position: inside; }
+.float { float: left; padding-right: 20px; 
 }
+nav  { font-weight: bold; background-color: #90C7E3; padding-top: 5px; padding-right: 5px; padding-bottom: 20px; padding-left: 5px; 
+}
+#gallery { position: relative; height: 200px; 
+}
+#gallery img { float: none; padding: 0; 
+}
+#gallery ul { width: 250px; list-style-type: none; 
+}
+#gallery li { display: inline; float: left; padding: 10px;
+}
+#gallery a { text-decoration: none; color: #666666; font-style: italic;
+}
+#gallery span { display: none; }
+#gallery a:hover span { display: block; position: absolute; top: 15px; left: 320px; text-align: center;
+}
+#placeholder { position: absolute; left: 320px; top: 15px; opacity: 0.25;
+}
+
 nav a {text-decoration: none;
+}
+nav a:link { color: #000033;
+}
+nav a:visited { color: #344873;
+}
+nav a:hover { color: #FFFFFF;
 }
 h1 { font-family: Georgia, "Times New Roman", serif; margin-bottom: 0; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; 
 }
@@ -24,5 +50,5 @@ h3 { color: #000033; font-family: Georgia, "Times New Roman", serif;
 }
 ul { list-style-image: url(images/marker.gif); 
 }
-footer { font-family: Georgia, "Times New Roman", serif; font-size: 75%; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;
+footer { float: none; font-family: Georgia, "Times New Roman", serif; font-size: 75%; font-style: italic; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;
 }
