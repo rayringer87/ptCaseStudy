@@ -9,18 +9,16 @@ header { background-color:#000033; color:#FFFFFF; background-image: url(images/s
          background-repeat: no-repeat;
          background-position: right;
 }
-<<<<<<< HEAD
 #content { background-color: #FFFFFF; padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; list-style-position: inside; margin-left: 190px; 
 }
 .float { float: left; padding-right: 20px; 
 }
 nav  { float: left; width: 160px; font-weight: bold; padding-top: 5px; padding-right: 5px; padding-bottom: 20px; padding-left: 5px; 
-=======
+}
 #content { padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; list-style-position: inside; }
 .float { float: left; padding-right: 20px; 
 }
 nav  { font-weight: bold; background-color: #90C7E3; padding-top: 5px; padding-right: 5px; padding-bottom: 20px; padding-left: 5px; 
->>>>>>> 4156e5f08698bb206fe51e328c6f892a7630dd86
 }
 #gallery { position: relative; height: 200px; 
 }
@@ -29,7 +27,6 @@ nav  { font-weight: bold; background-color: #90C7E3; padding-top: 5px; padding-r
 #gallery ul { width: 250px; list-style-type: none; 
 }
 #gallery li { display: inline; float: left; padding: 10px;
-<<<<<<< HEAD
 }
 #gallery a { text-decoration: none; color: #666666; font-style: italic;
 }
@@ -39,8 +36,6 @@ nav  { font-weight: bold; background-color: #90C7E3; padding-top: 5px; padding-r
 #placeholder { position: absolute; left: 320px; top: 15px; opacity: 0.25;
 }
 nav ul { padding: 0; margin: 0; list-style: none;
-=======
->>>>>>> 4156e5f08698bb206fe51e328c6f892a7630dd86
 }
 #gallery a { text-decoration: none; color: #666666; font-style: italic;
 }
@@ -70,13 +65,5 @@ h3 { color: #000033; font-family: Georgia, "Times New Roman", serif;
 }
 #content ul { list-style-image: url(images/marker.gif); 
 }
-<<<<<<< HEAD
 footer { float: none; background-color: #FFFFFF; font-family: Georgia, "Times New Roman", serif; font-size: 75%; font-style: italic; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; margin-left: 190px;
-=======
-<<<<<<< HEAD
-footer { float: none; font-family: Georgia, "Times New Roman", serif; font-size: 75%; font-style: italic; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;
-=======
-footer { font-family: Georgia, "Times New Roman", serif; font-size: 75%; font-style: italic; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;
->>>>>>> 7a22955aa2d6ece77346e5852c253a8cb5d1c721
->>>>>>> 4156e5f08698bb206fe51e328c6f892a7630dd86
 }
