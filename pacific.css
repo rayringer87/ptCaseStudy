@@ -193,6 +193,25 @@ h3 {
     font-weight: bold;
 }
 
+table {
+    border: 1px solid #3399CC;
+    width: 80%;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #3399CC;
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+.altrow { background-color: #F5FAFC;
+}
+    
 footer {
     float: none;
     background-color: #FFFFFF;
@@ -264,9 +283,7 @@ footer {
         display: block;
         margin: 0;
         padding: 0.3em;
-        border-bottom: 2px;
-        border-style: solid;
-        border-color: #330000;
+        border-bottom: 2px solid #330000;
     }
     nav a {
         display: block;
