@@ -211,6 +211,7 @@ td, th {
 
 .altrow { background-color: #F5FAFC;
 }
+<<<<<<< HEAD
 
 label {
     float: left;
@@ -226,6 +227,9 @@ input, textarea {
 }
 
 
+=======
+    
+>>>>>>> ef9265e9d72795e2c537b8c72cdc6d0da621b589
 footer {
     float: none;
     background-color: #FFFFFF;
