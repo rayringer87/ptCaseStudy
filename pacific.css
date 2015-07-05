@@ -9,13 +9,11 @@ section,
 article {
     display: block;
 }
-
 body {
     background-image: url(images/ptrbackground.jpg);
     color: #666666;
     font-family: Arial, "Helvitica Neue", Helvetica, sans-serif;
 }
-
 #wrapper {
     background-color: #90C7E3;
     width: 80%;
@@ -24,7 +22,6 @@ body {
     margin-right: auto;
     box-shadow: 5px 5px 5px #000033;
 }
-
 header {
     background-color: #000033;
     color: #FFFFFF;
@@ -32,7 +29,6 @@ header {
     background-repeat: no-repeat;
     background-position: right;
 }
-
 #content {
     background-color: #FFFFFF;
     padding-top: 1px;
@@ -42,24 +38,25 @@ header {
     list-style-position: inside;
     margin-left: 190px;
 }
-
 #content ul {
     list-style-image: url(images/marker.gif);
 }
-
-#content img {
+#content img,
+#content video,
+#content embed {
     float: left;
     padding-right: 20px;
 }
-
+video {
+    width: 320px;
+    height: 240px;
+}
 .desktop {
     display: inline;
 }
-
 .mobile {
     display: none;
 }
-
 nav {
     float: left;
     width: 160px;
@@ -70,38 +67,31 @@ nav {
     padding-bottom: 5px;
     padding-left: 20px;
 }
-
 #gallery {
     position: relative;
     height: 200px;
 }
-
 #gallery img {
     float: none;
     padding: 0;
 }
-
 #gallery ul {
     width: 250px;
     list-style-type: none;
 }
-
 #gallery li {
     display: inline;
     float: left;
     padding: 10px;
 }
-
 #gallery a {
     text-decoration: none;
     color: #666666;
     font-style: italic;
 }
-
 #gallery span {
     display: none;
 }
-
 #gallery a:hover span {
     display: block;
     position: absolute;
@@ -109,30 +99,25 @@ nav {
     left: 320px;
     text-align: center;
 }
-
 #placeholder {
     position: absolute;
     left: 320px;
     top: 15px;
     opacity: 0.25;
 }
-
 nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 #gallery a {
     text-decoration: none;
     color: #666666;
     font-style: italic;
 }
-
 #gallery span {
     display: none;
 }
-
 #gallery a:hover span {
     display: block;
     position: absolute;
@@ -140,30 +125,25 @@ nav ul {
     left: 320px;
     text-align: center;
 }
-
 #placeholder {
     position: absolute;
     left: 320px;
     top: 15px;
     opacity: 0.25;
 }
-
 nav a {
     text-decoration: none;
 }
-
 nav a:link {
     color: #000033;
 }
-
 nav a:visited {
     color: #344873;
 }
-
 nav a:hover {
     color: #FFFFFF;
+    transition: 3s ease-out;
 }
-
 h1 {
     font-family: Georgia, "Times New Roman", serif;
     margin-bottom: 0;
@@ -172,46 +152,39 @@ h1 {
     padding-bottom: 10px;
     padding-left: 10px;
 }
-
 h2 {
     color: #3399CC;
     font-family: Georgia, "Times New Roman", serif;
     text-shadow: 1px 1px 1px #666666;
 }
-
 h3 {
     color: #000033;
     font-family: Georgia, "Times New Roman", serif;
 }
-
 #contact {
     font-size: 90%;
 }
-
 .resort {
     color: #5C7FA3;
     font-weight: bold;
 }
-
 table {
     border: 1px solid #3399CC;
     width: 80%;
     border-spacing: 0;
 }
-
-td, th {
+td,
+th {
     padding: 5px;
     border: 1px solid #3399CC;
     text-align: center;
 }
-
 .text {
     text-align: left;
 }
-
-.altrow { background-color: #F5FAFC;
+.altrow {
+    background-color: #F5FAFC;
 }
-
 label {
     float: left;
     display: block;
@@ -219,13 +192,11 @@ label {
     width: 120px;
     padding-right: 5px;
 }
-
-input, textarea {
+input,
+textarea {
     display: block;
     margin-bottom: 20px;
 }
-
-
 footer {
     float: none;
     background-color: #FFFFFF;
@@ -238,7 +209,6 @@ footer {
     padding-left: 20px;
     margin-left: 190px;
 }
-
 @media only screen and (max-width: 768px) {
     body {
         margin: 0;
@@ -265,18 +235,20 @@ footer {
         padding-bottom: 0;
         padding-left: 0.75em;
     }
-    #content { margin-left: 0; }
-    footer { margin-left: 0; }
+    #content {
+        margin-left: 0;
+    }
+    footer {
+        margin-left: 0;
+    }
 }
-
 @media only screen and (max-width: 550px) {
     #gallery {
         display: none;
     }
 }
-
 @media only screen and (max-width: 480px) {
-    h1 { 
+    h1 {
         padding-left: 0.3em;
         margin: 0;
         font-size: 1.5em;
@@ -293,7 +265,7 @@ footer {
         padding: 0;
         margin: 0;
     }
-    nav li { 
+    nav li {
         display: block;
         margin: 0;
         padding: 0.3em;
@@ -302,7 +274,7 @@ footer {
     nav a {
         display: block;
     }
-    #content img {
+    .mobile img {
         float: none;
         padding: 0;
         margin: 0.1em;
@@ -310,13 +282,17 @@ footer {
     #content ul {
         list-style-position: outside;
     }
+    video {
+        display: none;
+    }
     .desktop {
         display: none;
     }
     .mobile {
         display: inline;
     }
-    form {
+    form,
+    label {
         float: none;
         text-align: left;
     }
